@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freeze!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Freeze</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row" id="headingText">
+            <div class="col-lg-12">
+                <h1 class="page-header">Freeze!
+                    <small>Select the items you like to collect points!</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+            <div id="img1" class="hide">
+                <div class="col-md-4" >
+                    <img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/736x/74/16/15/741615c1d18a7c42125788a486a28158.jpg" alt="">
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success firstPicButton">Like</button>
+                    <button type="button" class="btn btn-danger firstPicButton">Unlike</button>
+               </div>
+            </div>
+            <div id="img2" class="hide">
+                <div class="col-md-4" >
+                    <img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/736x/a6/a2/90/a6a2903152d5eb03ddd7fffa0b1d7098.jpg" alt="">
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success secondPicButton">Like</button>
+                    <button type="button" class="btn btn-danger secondPicButton">Unlike</button>
+               </div>
+            </div>
+            <div id="img3" class="hide">
+                <div class="col-md-4" >
+                    <img class="img-responsive" src="https://www.hobbs.co.uk/images/products/0213-6346-3821L00-003/0213-6346-3821L00-003_01_1008_1080.jpg" alt="">
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success thirdPicButton">Like</button>
+                    <button type="button" class="btn btn-danger thirdPicButton">Unlike</button>
+               </div>
+            </div>
+            <div id="targetDiv">
+                <div class="col-md-4" >
+                    <img id = "targetImg" class="img-responsive" src="" alt="">
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success nextButton">Like</button>
+                    <button type="button" class="btn btn-danger nextButton">Unlike</button>
+               </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row hide" id="trending-page" >
+
+            <div class="col-lg-12">
+                <div class="alert alert-success">
+                    <strong>You have earned another freeze!</strong> </br>
+                    Number of freezes available : 1
+                </div>
+                <h3 class="page-header">Trending items</h3>
+                <div class="alert alert-danger">
+                    <span id="timerText"></span>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="https://pstops.com/wp-content/uploads/2016/05/summer-tops-03.jpg" alt="">
+                </a>
+                <p>High : 25$   Low : 18$   Trending : 19$</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://g01.a.alicdn.com/kf/HTB1swfSHVXXXXbKXXXXq6xXFXXXG/2015-Brand-New-Summer-Women-Chiffon-Top-Blouse-font-b-Pintuck-b-font-Neckline-Chiffon-Vest.jpg" alt="">
+                </a>
+                <p>High : 40$   Low : 35$   Trending : 37$</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="https://s-media-cache-ak0.pinimg.com/originals/90/73/37/90733705597f84e3be09cd3b11dd2a0c.jpg" alt="">
+                </a>
+                <p>High : 50$   Low : 35$   Trending : 45.60$</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+            </div>
+        
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://jandji.ru/wp/wp-content/uploads/2015/01/New-2015-Summer-Fashion-Women-Blouses-Sheer-Shirts-Casual-Ladies-Tops-For-Women-Clothing-Patchwork-Chiffon-300x300.jpg" alt="">
+                </a>
+                <p>High : 20$   Low : 16$   Trending : 17$</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#freezeWindow">Freeze</button>
+            </div>
+
+        </div>
+        <div class="modal fade" id="freezeWindow" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Payment</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>You are buying the item for XX$</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Pay Now</button>
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Pay Later</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+            </div>
+            
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var dummyImages = [
+            "https://s-media-cache-ak0.pinimg.com/originals/90/73/37/90733705597f84e3be09cd3b11dd2a0c.jpg",
+            "http://g01.a.alicdn.com/kf/HTB1swfSHVXXXXbKXXXXq6xXFXXXG/2015-Brand-New-Summer-Women-Chiffon-Top-Blouse-font-b-Pintuck-b-font-Neckline-Chiffon-Vest.jpg",
+            "http://jandji.ru/wp/wp-content/uploads/2015/01/New-2015-Summer-Fashion-Women-Blouses-Sheer-Shirts-Casual-Ladies-Tops-For-Women-Clothing-Patchwork-Chiffon-300x300.jpg",
+            "https://s-media-cache-ak0.pinimg.com/736x/74/16/15/741615c1d18a7c42125788a486a28158.jpg",
+            "https://s-media-cache-ak0.pinimg.com/736x/a6/a2/90/a6a2903152d5eb03ddd7fffa0b1d7098.jpg",
+            "https://www.hobbs.co.uk/images/products/0213-6346-3821L00-003/0213-6346-3821L00-003_01_1008_1080.jpg",
+            "./images/1.jpg",
+            "./images/2.png",
+            "./images/3.png",
+            "./images/4.png",
+            "./images/5.jpg",
+
+
+        ]
+        $('#targetImg').attr('src', dummyImages[0]);
+        var g_imageCounter = 0;
+        $(".nextButton").click(function(){
+            if(g_imageCounter === (dummyImages.length - 1)){
+                $("#targetDiv").addClass('hide');
+                $("#headingText").addClass('hide');
+                $("#trending-page").removeClass('hide');
+            } else {
+                g_imageCounter++;
+                $('#targetImg').attr('src', dummyImages[g_imageCounter]);      
+            }
+
+        });
+
+        
+        var counter = 600;
+        var interval = setInterval(function() {
+            counter--;
+            $("#timerText").text("Clock is ticking! Deals ending in : " + secondsTimeSpanToHMS(counter));
+            if (counter == 600) {
+                $("#timerText").text("Deals ended");
+                clearInterval(interval);
+            }
+        }, 1000)
+
+        function secondsTimeSpanToHMS(s) {
+            var h = Math.floor(s/3600); //Get whole hours
+            s -= h*3600;
+            var m = Math.floor(s/60); //Get remaining minutes
+            s -= m*60;
+            return h+":"+(m < 10 ? '0'+m : m)+":"+(s < 10 ? '0'+s : s); //zero padding on minutes and seconds
+        }
+    </script>
+
+</body>
+
+</html>
